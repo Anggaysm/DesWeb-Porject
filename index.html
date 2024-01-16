@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yovans</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark blue bg shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Yovan</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto pe-5">
+            <li class="nav-item px-4">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#galery">Galery</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#article">Article</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="asset/img/Header_bg.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Selamat Datang di Yovans</h5>
+            <p>
+              "Menginspirasi Cinta dan Kepedulian terhadap Alam untuk Masa Depan
+              yang Lebih Baik"
+            </p>
+            <button class="card-btn" onclick="scrollToSection('#galery')">
+              Eplore
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="asset/img/header2.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Eksplorasi Alam Bersama Yovans</h5>
+            <p>
+              "Jelajahi Keindahan dan Keberagaman Alam Melalui Kegiatan dan
+              Proyek Konservasi Kami"
+            </p>
+            <button class="card-btn" onclick="scrollToSection('#galery')">
+              Eplore
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="asset/img/header3.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h5>Bergabunglah</h5>
+            <p>
+              "Temukan Bagaimana Anda Dapat Berperan dalam Masa Depan
+              Lingkungan"
+            </p>
+            <button class="card-btn" onclick="scrollToSection('#galery')">
+              Eplore
+            </button>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- AKhir Home -->
+
+    <!-- About -->
+    <div class="container about" id="about">
+      <div class="d-flex justify-content-evenly about-isi">
+        <div class="col-md-4 about-content">
+          <h1>About Us</h1>
+          <div class="garis"></div>
+          <p>
+            We are Yovans, a community committed to preserving the beauty of
+            nature. With a collective spirit, we design and implement
+            environmental conservation and education projects, inviting every
+            individual to join in our efforts to protect the earth. Join us on a
+            journey to build a harmonious relationship between humans and
+            nature, creating a positive impact for a sustainable future.
+          </p>
+          <button id="aboutpage" type="button" class="btn btn-primary">
+            Read More...
+          </button>
+        </div>
+        <div class="col-md-4">
+          <img src="asset/img/about.png" class="img-fluid" alt="Gambar" />
+        </div>
+      </div>
+    </div>
+    <!-- AKhir About -->
+
+    <!-- Galery -->
+
+    <div class="container container-galery" id="galery">
+      <div class="galery">
+        <h1>Explore Your Adventure</h1>
+        <p>These are some photos of the agenda that we carry out regularly</p>
+      </div>
+      <div class="container-card">
+        <div class="card">
+          <img
+            src="asset/img/justin-kauffman-a8lTjWJJgLA-unsplash.jpg"
+            alt=""
+            class="img-card"
+          />
+          <div class="card-body">
+            <h1 class="card-title">Swg</h1>
+            <p class="card-sub-title">Sawangan</p>
+            <p class="card-info">
+              panorama perbukitan menakjubkan, tempat istimewa yang mengundang
+              ketenangan dalam keindahan alam yang menawan.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="asset/img/shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg"
+            alt=""
+            class="img-card"
+          />
+          <div class="card-body">
+            <h1 class="card-title">clw</h1>
+            <p class="card-sub-title">Ciliwung</p>
+            <p class="card-info">
+              Ciliwung, sungai yang mempesona, menampilkan view air yang jernih
+              dan alami, menciptakan pantai indah di tengah kota.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="asset/img/blake-verdoorn-cssvEZacHvQ-unsplash.jpg"
+            alt=""
+            class="img-card"
+          />
+          <div class="card-body">
+            <h1 class="card-title">CIS</h1>
+            <p class="card-sub-title">Ciomas</p>
+            <p class="card-info">
+              Ciomas, surga tersembunyi, mempesona dengan hutan yang hijau dan
+              air terjun yang menakjubkan, menciptakan pemandangan alam yang
+              memesona.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">See More...</button>
+    </div>
+    <!-- AKhir Galery -->
+
+    <!--Article  -->
+
+    <div class="container container-galery" id="article">
+      <div class="galery">
+        <h1>Article</h1>
+        <p>This is an article about nature that can broaden your insight</p>
+      </div>
+      <div class="container-card">
+        <div class="card-article">
+          <img
+            src="asset/img/vincent-van-zalinge-vUNQaTtZeOo-unsplash.jpg"
+            alt=""
+            class="img-card"
+          />
+          <div class="card-body-article">
+            <h1 class="card-title-article">Kehidupan Burung</h1>
+            <p class="card-info">
+              Burung, makhluk berbulu yang membawa keindahan dan keceriaan dalam
+              alam semesta kita.
+            </p>
+            <div class="text-center">
+              <button class="card-btn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <img
+            src="asset/img/jason-ortego-buF62ewDLcQ-unsplash.jpg"
+            alt=""
+            class="img-card"
+          />
+          <div class="card-body-article">
+            <h1 class="card-title-article">Paru-paru Bumi</h1>
+            <p class="card-info">
+              Hutan, tempat di mana pepohonan menjulang tinggi dan kehidupan
+              berlimpah.
+            </p>
+            <div class="text-center">
+              <button class="card-btn">Read More</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-article">
+          <img
+            src="asset/img/gemma-evans-JUrolU3FLTA-unsplash.jpg"
+            alt=""
+            class="img-card"
+          />
+          <div class="card-body-article">
+            <h1 class="card-title-article">Misteri dan Kecantikan</h1>
+            <p class="card-info">
+              Danau, perairan yang tenang dan mendalam, menyimpan sejuta cerita
+              dan misteri di dalamnya.
+            </p>
+            <div class="text-center">
+              <button class="card-btn">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary">See More...</button>
+    </div>
+
+    <!-- Akhir Article -->
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="galery">
+          <h1>Contact</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="masukan nama anda"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Alamat Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Subjek" class="form-label">Subjek</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Masukan Subjek"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="5"></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir contact -->
+
+    <!-- Footer -->
+    <footer class="container-footer row justify-content-center text-center">
+      <div class="d-flex justify-content-center footer">
+        <a class="nav-link" aria-current="page" href="#about">About</a
+        ><a class="nav-link" href="#galery">Galery</a>
+        <a class="nav-link" href="#article">Article</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <div class="garis-putih"></div>
+      <p class="text-white">
+        Copyright © 2023
+        <a
+          target="_blank"
+          class="text-white"
+          href="https://www.linkedin.com/in/angga-yusma-prasetia-325003246/"
+          >Angga Yusma Prasetia</a
+        >
+      </p>
+    </footer>
+    <!-- Akhir Footer -->
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
