@@ -273,7 +273,9 @@
   -ms-transition: 1.5s;
   -o-transition: 1.5s;
 }
-
+.galery p {
+  color: #7a7a7a;
+}
 .container-footer {
   background-color: #2b3499;
   width: 100%;
