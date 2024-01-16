@@ -295,3 +295,19 @@
 .container-footer p {
   font-size: smaller;
 }
+
+.img-colab {
+  filter: grayscale();
+  -webkit-filter: grayscale();
+  margin: 20px 20px;
+}
+
+.img-colab:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
